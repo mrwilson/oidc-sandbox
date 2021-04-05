@@ -1,12 +1,12 @@
 package uk.co.probablyfine.oidc;
 
-import spark.Spark;
+import static spark.Spark.get;
 
 public class ProviderMain {
 
     public static void main(String... args) {
 
-        Spark.get("/", (req, res) -> "Hello, world!");
+        get("/authorize", AuthorizeAction::authorize);
 
     }
 }
