@@ -6,9 +6,19 @@
 
     <groupId>uk.co.probablyfine</groupId>
     <artifactId>oidc-sandbox</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.0</version>
 
     <description>Sandbox experiments with OpenID Connect and other gubbins</description>
+
+    <properties>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>oidc-provider</module>
+    </modules>
 
     <dependencies>
         <dependency>
